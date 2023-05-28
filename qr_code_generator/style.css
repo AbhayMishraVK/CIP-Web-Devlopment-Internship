@@ -1,0 +1,125 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	user-select: none ;
+}
+
+body
+{
+	background-color: #aeab98 ;
+/* 	#f9bffe  */
+	height: 100vh ;
+	display: flex;
+	justify-content: center ;
+	align-items: center;
+
+	background-image: linear-gradient(to right bottom , #D4145A , #FBB03B);
+
+}
+
+div.main
+{
+	background-image:linear-gradient(to right, #BFF098 , #6FD6FF);
+	padding: 20px ;
+	box-shadow: 8px 5px 3px rgba(0,0,0,0.3);
+}
+
+section.upper , form
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+	margin-bottom: 20px;
+}
+
+h1
+{
+	font-size: 32px;
+}
+
+form
+{
+	gap: 20px;
+}
+
+textarea
+{
+	width: 100%;	
+	resize: none;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	height: 150px;
+	padding: 10px 15px ;
+	outline: none;
+	border: none;
+	box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+
+button
+{
+	width: 100% ;
+	height: 40px ;
+	padding: 10px 15px;
+	border: none ;
+	color: black;
+	text-transform: uppercase;
+	opacity: 0.9;
+	font-weight: 600;
+	font-size: 16px;
+	transition: all 0.3s ease ;
+	background-image: linear-gradient(to right bottom , #009245, #FCEE21);
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+button:hover
+{
+	opacity: 1.0;
+}
+
+
+section.qr_code
+{
+	display: flex;
+	justify-content: center;
+	height: 0;
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+section.show
+{
+	height: 150px;
+	opacity: 1;
+}
+
+
+img
+{
+	height: 150px;
+}
+
+
+/***************** MEDIA QUERY *********************/
+@media (max-width: 500px) {
+
+	.main
+	{
+		width: 90%;
+	}
+
+	h1
+	{
+		font-size: 24px;
+	}
+
+	h3
+	{
+		font-size: 16px;
+	}
+}

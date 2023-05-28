@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> QR CODE GENERATOR </title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="index.js" defer></script>
+
+</head>
+<body>
+
+
+	<div class="main">
+
+		<!-------------- TO SHOW HEADINGS --------------->
+		<section class="upper">
+			<h1>QR CODE GENERATOR </h1>
+			<h3>Paste text to create a QR Code</h3>
+		</section>
+
+		<!-------------- TO TAKE INPUT AND GENRATW --------------->
+		<form id="qrForm">
+			<textarea type="text" id="input" name="qrText" placeholder="Enter text....." autocomplete="off"> </textarea>
+			<button type="submit" id="button"> Genrate QR code </button>
+		</form>
+
+		<!-------------- TO SHOW A QR CODE --------------->
+		<section class="qr_code" id="qrContainer">
+			<img id="qrImg" src="">
+		</section>
+		
+		
+	</div>
+</body>
+</html>
